@@ -6,7 +6,7 @@
 //  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
 //
 
-import Moya
+import OLNetworking
 
 enum {{ module_info.name }}Endpoint {
     
@@ -32,7 +32,7 @@ extension {{ module_info.name }}Endpoint: SugarTargetType {
     }
 
     var sampleData: Data {
-        fatalError("Sample data not specified")
+        fatalError("Data not specified")
     }
     
 }

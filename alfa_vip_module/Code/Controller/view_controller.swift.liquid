@@ -14,13 +14,15 @@ protocol {{ module_info.name }}DisplayLogic: class {
 
 final class {{ module_info.name }}ViewController: UIViewController {
     
-    // MARK: - Properties
-    private let interactor: {{ module_info.name }}BusinessLogic
-    private var state: State {
+    // MARK: - Internal Properties
+    var state: State {
         didSet {
             updateState()
         }
     }
+
+    // MARK: - Private Properties
+    private let interactor: {{ module_info.name }}BusinessLogic
     
     // MARK: - Views
     private lazy var mainView: {{ module_info.name }}View = {
