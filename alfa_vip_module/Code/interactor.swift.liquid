@@ -12,7 +12,7 @@ protocol {{ module_info.name }}BusinessLogic {
     
 }
 
-final class {{ module_info.name }}Interactor: ModuleBusinessLogic {
+final class {{ module_info.name }}Interactor: {{ module_info.name }}BusinessLogic {
     
     // MARK: - Properties
     private let presenter: {{ module_info.name }}PresentationLogic
