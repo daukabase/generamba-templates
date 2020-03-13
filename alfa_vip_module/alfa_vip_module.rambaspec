@@ -8,20 +8,6 @@ license: "MIT"
 # The declarations for code files
 
 code_files:
-# Builder
-- {name: ModuleBuilder.swift, path: Code/module_builder.swift.liquid}
-
-# Interactor
-- {name: ModuleInteractor.swift, path: Code/interactor.swift.liquid}
-
-# Data Flow
-- {name: ModuleDataFlow.swift, path: Code/data_flow.swift.liquid}
-
-# Presenter
-- {name: ModulePresenter.swift, path: Code/presenter.swift.liquid}
-
-# View
-- {name: View/ModuleView.swift, path: Code/View/view.swift.liquid}
 
 # Controller
 - {name: Controller/ModuleViewController.swift, path: Code/Controller/view_controller.swift.liquid}
@@ -34,3 +20,18 @@ code_files:
 - {name: Provider/ModuleEndpoint.swift, path: Code/Provider/module_endpoint.swift.liquid}
 - {name: Provider/ModuleProvider.swift, path: Code/Provider/module_provider.swift.liquid}
 - {name: Provider/ModuleService.swift, path: Code/Provider/module_service.swift.liquid}
+
+# View
+- {name: View/ModuleView.swift, path: Code/View/view.swift.liquid}
+
+# Builder
+- {name: ModuleBuilder.swift, path: Code/module_builder.swift.liquid}
+
+# Data Flow
+- {name: ModuleDataFlow.swift, path: Code/data_flow.swift.liquid}
+
+# Interactor
+- {name: ModuleInteractor.swift, path: Code/interactor.swift.liquid}
+
+# Presenter
+- {name: ModulePresenter.swift, path: Code/presenter.swift.liquid}
