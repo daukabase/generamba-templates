@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol {{ module_info.name }}DisplayLogic {
+protocol {{ module_info.name }}DisplayLogic: class {
 
 }
 
@@ -23,8 +23,8 @@ final class {{ module_info.name }}ViewController: UIViewController {
     }
     
     // MARK: - Views
-    private lazy var mainView = {
-        let view = {{ module_info.name }}View()
+    private lazy var mainView: {{ module_info.name }}View = {
+        let view = {{ module_info.name }}View(delegate: self)
         return view
     }()
     

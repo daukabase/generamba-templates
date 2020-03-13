@@ -19,12 +19,12 @@ final class {{ module_info.name }}Builder: ModuleBuilder {
         self.state = state
     }
     
-    // MARK: - Methods
-    func build(with state: {{ module_info.name }}ViewController.State) -> UIViewController {
+    // MARK: - ModuleBuilder
+    func build() -> UIViewController {
         let presenter = {{ module_info.name }}Presenter()
         let interactor = {{ module_info.name }}Interactor(presenter: presenter)
         let viewController = {{ module_info.name }}ViewController(interactor: interactor,
-                                                  state: state)
+                                                                  state: state)
         
         presenter.viewController = viewController
         
